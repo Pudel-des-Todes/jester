@@ -48,12 +48,6 @@ jester.cmdQuest = function(args)
 		start = true;
 	end
 
-	if objective and not kcdfw.isInt(objective) then
-		kcdfw.logError(jester, "Objective not a valid integer: %s", tostring(objective));
-		return;
-	end
-
-
 	local didSomething = false;
 
 	if disable then
